@@ -1,0 +1,22 @@
+ol > li {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    margin: .5rem 0;
+}
+
+ol > li > h3 {
+    grid-column: 2;
+}
+
+ol > li > img {
+    border-radius: 50%;
+    grid-column: 1;
+    grid-row: 1; /*Redefinicion de grid-row-start y grid-row-end concocida*/
+    margin-right: .25rem;
+    width: 1.5rem;
+}
+
+ol > li > *:nth-child(n+3) {
+    grid-column: 1 / 4;
+}

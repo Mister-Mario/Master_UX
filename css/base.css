@@ -1,0 +1,90 @@
+body{
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #000;
+    margin: 0;
+}
+
+/*Header*/
+header {
+    background-color: #095b3d;
+    color: #fff;
+    padding: .5rem 0rem .5rem 1rem;
+    margin: .5rem;
+}
+
+h1 {
+    font-size: 2.125rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    margin: auto;
+    width: fit-content;
+}
+
+nav a {
+    border-radius: .25rem;
+    font-size: 1.125rem;
+    padding: .25rem;
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: #fff;
+  /*background-color Heredado de header*/
+}
+
+nav a:hover, nav a:active {
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+nav a:hover {
+  color: #095b3d;
+}
+
+nav a:active {
+  color: #000;
+}
+
+/*Main related*/
+main{
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: .75rem 0;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: .5rem 0;
+    text-decoration: underline;
+}
+
+ol, ul {
+    margin-left: .5rem;
+}
+
+li p {
+    margin-left: .5rem;
+}
+
+p {
+    font-size: 1.15rem;
+}

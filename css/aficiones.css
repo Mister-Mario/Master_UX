@@ -1,0 +1,25 @@
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+audio {
+    align-self: center;
+    margin-top: 1rem;
+    min-width: 10rem;
+    width: 50%;
+}
+
+span {
+    align-self: center;
+    font-size: .75rem;
+    margin: .5rem 2rem 0;
+}
+
+video {
+    align-self: center;
+    height: auto;
+    margin-top: 1.5rem;
+    min-width: 10rem;
+    width: 50%;
+}
