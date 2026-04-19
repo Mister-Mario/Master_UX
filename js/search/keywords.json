@@ -1,0 +1,235 @@
+[
+    {
+        "titulo": "about.education.master.title",
+        "categoria": "about.education.title",
+        "keywords": [
+            "master",
+            "universidad",
+            "university",
+            "oviedo",
+            "uniovi",
+            "ingenieria",
+            "engineering",
+            "web",
+            "estudios",
+            "educacion",
+            "education",
+            "formacion",
+            "studies",
+            "postgrado",
+            "postgraduate"
+        ],
+        "url": "sobremi.html#formacion-master"
+    },
+    {
+        "titulo": "about.education.degree.title",
+        "categoria": "about.education.title",
+        "keywords": [
+            "grado",
+            "degree",
+            "universidad",
+            "university",
+            "oviedo",
+            "uniovi",
+            "ingenieria",
+            "engineering",
+            "informatica",
+            "computing",
+            "software",
+            "bilingue",
+            "bilingual",
+            "estudios",
+            "educacion",
+            "education",
+            "formacion",
+            "studies",
+            "carrera",
+            "career",
+            "major"
+        ],
+        "url": "sobremi.html#formacion-grado"
+    },
+    {
+        "titulo": "about.experience.seresco.title",
+        "categoria": "about.experience.title",
+        "keywords": [
+            "practicas",
+            "internship",
+            "trabajo",
+            "work",
+            "job",
+            "empresa",
+            "company",
+            "seresco",
+            "ionic",
+            "react",
+            "typescript",
+            "frontend",
+            "mobile",
+            "movil"
+        ],
+        "url": "sobremi.html#experiencia-practicas-seresco"
+    },
+    {
+        "titulo": "about.references.miguel.name",
+        "categoria": "about.references.title",
+        "keywords": [
+            "referencias",
+            "references",
+            "profesor",
+            "professor",
+            "teacher",
+            "miguel riesco",
+            "doctor"
+        ],
+        "url": "sobremi.html#referencia-miguel-riesco"
+    },
+    {
+        "titulo": "search.contact.title",
+        "categoria": "search.contact.category",
+        "keywords": [
+            "contacto",
+            "contact",
+            "email",
+            "correo",
+            "mail",
+            "github",
+            "linkedin",
+            "redes",
+            "networks",
+            "social",
+            "encontrarme",
+            "find me"
+        ],
+        "url": "sobremi.html#seccion-contacto"
+    },
+    {
+        "titulo": "projects.clipboard.title",
+        "categoria": "projects.title",
+        "keywords": [
+            "proyecto",
+            "project",
+            "clipboard",
+            "portapapeles",
+            "windows",
+            "cpp",
+            "C++"
+        ],
+        "url": "proyectos.html#proyecto-clipboard"
+    },
+    {
+        "titulo": "projects.organizo.title",
+        "categoria": "projects.title",
+        "keywords": [
+            "proyecto",
+            "project",
+            "organizo",
+            "android",
+            "kotlin",
+            "movil",
+            "mobile",
+            "tareas",
+            "tasks"
+        ],
+        "url": "proyectos.html#proyecto-organizo"
+    },
+    {
+        "titulo": "projects.carrousel.title",
+        "categoria": "projects.title",
+        "keywords": [
+            "proyecto",
+            "project",
+            "image",
+            "carrousel",
+            "carrusel",
+            "react native",
+            "componente",
+            "component",
+            "npm",
+            "libreria",
+            "library",
+            "frontend"
+        ],
+        "url": "proyectos.html#proyecto-image-carrousel"
+    },
+    {
+        "titulo": "search.hobbies.it",
+        "categoria": "search.hobbies.category",
+        "keywords": [
+            "aficion",
+            "hobby",
+            "hobbies",
+            "informatica",
+            "computing",
+            "computer science",
+            "ordenadores",
+            "computers",
+            "tecnologia",
+            "technology"
+        ],
+        "url": "aficiones.html#aficion-informatica"
+    },
+    {
+        "titulo": "hobbies.cooking.title",
+        "categoria": "search.hobbies.category",
+        "keywords": [
+            "aficion",
+            "hobby",
+            "hobbies",
+            "cocina",
+            "cooking",
+            "kitchen",
+            "comida",
+            "food",
+            "cocinar",
+            "cook",
+            "culturas",
+            "cultures",
+            "recetas",
+            "recipes"
+        ],
+        "url": "aficiones.html#aficion-cocina"
+    },
+    {
+        "titulo": "search.hobbies.music",
+        "categoria": "search.hobbies.category",
+        "keywords": [
+            "aficion",
+            "hobby",
+            "hobbies",
+            "musica",
+            "music",
+            "lofi",
+            "audio",
+            "concentracion",
+            "focus",
+            "concentration",
+            "trabajo",
+            "work",
+            "relajacion",
+            "relax",
+            "relaxation"
+        ],
+        "url": "aficiones.html#aficion-musica"
+    },
+    {
+        "titulo": "search.hobbies.anime",
+        "categoria": "search.hobbies.category",
+        "keywords": [
+            "aficion",
+            "hobby",
+            "hobbies",
+            "anime",
+            "manga",
+            "one piece",
+            "luffy",
+            "japon",
+            "japan",
+            "series",
+            "lectura",
+            "reading",
+            "nepal"
+        ],
+        "url": "aficiones.html#aficion-anime"
+    }
+]

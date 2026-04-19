@@ -1,0 +1,46 @@
+/*Breadcrumbs*/
+body>nav ol {
+    align-items: center;
+    display: flex;
+    margin-left: .75rem;
+    height: 2rem;
+}
+
+body>nav ol li a,
+body>nav ol li p {
+    font-size: 1rem;
+}
+
+body>nav ol li a,
+body>nav ol li a:link,
+body>nav ol li a:visited {
+    color: #666666;
+    text-decoration: none;
+}
+
+body>nav ol li a:hover,
+body>nav ol li a:active {
+    color: #095b3d;
+    font-weight: 800;
+}
+
+body>nav ol li p {
+    color: #666666;
+    font-weight: 500;
+}
+
+body>nav ol li:not(:last-child)::after {
+    content: ">";
+    font-size: .625rem;
+    margin-left: .375rem;
+    margin-right: .375rem;
+    text-decoration: none;
+}
+
+body>nav ol li a::after:hover {
+    text-decoration: none;
+}
+
+body>nav ol li p {
+    margin-left: 0;
+}

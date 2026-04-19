@@ -1,0 +1,25 @@
+main ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+main ol li {
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    transition: var(--transicion);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+
+main ol li h3 {
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+main ol li p {
+    color: #666666;
+    line-height: 1.6;
+}

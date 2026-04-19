@@ -1,0 +1,144 @@
+{
+    "index": {
+        "title": "Mario Junquera Rojas",
+        "titleBody": "Hello, I am <span>Mario Junquera Rojas</span>"
+    },
+    "breadcrumb": {
+        "index": "Start",
+        "about": "About Me",
+        "projects": "Projects",
+        "help": "Help",
+        "hobbies": "Hobbies"
+    },
+    "search": {
+        "default": "No results found",
+        "label": "Search",
+        "formAria": "Site search",
+        "inputAria": "Studies, Contact...",
+        "placeholder": "Studies, Contact...",
+        "button": "Search",
+        "contact": {
+            "title": "Contact (Email, GitHub, LinkedIn)",
+            "category": "Contact"
+        },
+        "hobbies": {
+            "category": "Hobbies",
+            "it": "Computer Science (Hobby)",
+            "music": "Music (LOFI)",
+            "anime": "Anime and Manga (One Piece)"
+        }
+    },
+    "nav": {
+        "about": "About Me",
+        "projects": "Projects",
+        "hobbies": "Hobbies",
+        "help": "Help",
+        "language": "Select language",
+        "es": "Español",
+        "en": "English",
+        "mainAria": "Main navigation",
+        "langAria": "Select page language"
+    },
+    "about": {
+        "title": "Who is Mario Junquera Rojas?",
+        "education": {
+            "title": "Education",
+            "uni": "School of Computer Engineering, University of Oviedo",
+            "master": {
+                "title": "Master's Degree in Web Engineering",
+                "date": "September 2025 - Present"
+            },
+            "degree": {
+                "title": "Bachelor's Degree in Software Engineering (Bilingual)",
+                "date": "September 2021 - November 2025"
+            }
+        },
+        "experience": {
+            "title": "Work Experience",
+            "tasks": "Tasks performed:",
+            "seresco": {
+                "title": "Internship at Seresco S.A.",
+                "date": "February 2025 - July 2025",
+                "task1": "Implementation of an enterprise style catalog for mobile applications",
+                "task2": "Application development using Ionic, React, and TypeScript"
+            }
+        },
+        "references": {
+            "title": "References",
+            "miguel": {
+                "name": "Dr. Miguel Riesco Albizu",
+                "desc": "PhD from the University of Oviedo (2002) and professor at the EII (School of Computer Engineering) of the University of Oviedo."
+            }
+        },
+        "contact": {
+            "title": "How to find me",
+            "githubAria": "Visit my GitHub profile",
+            "linkedinAria": "Visit my LinkedIn profile",
+            "emailAria": "Send an email to Mario"
+        },
+        "links": {
+            "title": "How to find me"
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "clipboard": {
+            "title": "Clipboard++",
+            "desc": "Clipboard++ multiplies the Windows clipboard by 20, reducing time lost when copying and pasting content."
+        },
+        "organizo": {
+            "title": "Organizo",
+            "desc": "Organizo is a TODO app characterized by its composite tasks. Developed for Android mobiles in Kotlin."
+        },
+        "carrousel": {
+            "title": "Image Carrousel",
+            "desc": "React-native-image-carrousel is a React Native component that allows developers to implement an image carousel effectively."
+        }
+    },
+    "hobbies": {
+        "title": "And Mario, what do you like to do?",
+        "it": {
+            "title": "Computer Science",
+            "desc1": "Since I was a child, I've been interested in computers and knowing how things really work, taking a bit of the magic out of things. Luckily, I've been able to expand my knowledge in this field with my university studies."
+        },
+        "cooking": {
+            "title": "Cooking",
+            "desc1": "To be honest, I prefer eating to cooking, who doesn't? In order to keep up with my appetite and try new things, I've ended up learning how to cook little by little.",
+            "desc2": "In addition to satisfying this desire, by learning to cook, I have managed to understand other cultures a bit and understand how there is always a use for everything, and that to judge well, the best thing you can do is close your eyes."
+        },
+        "music": {
+            "title": "Music",
+            "desc1": "Music accompanies me almost everywhere I go alone today. And although I like to grab a wooden spoon and use it as a microphone from time to time, the music I consume most is LOFI; I use it to concentrate when working. Here is a track from this audio:",
+            "desc2": "Music track: Bean by Lukrembo Source: https://freetouse.com/music No Copyright Background Music"
+        },
+        "anime": {
+            "title": "Anime and Manga",
+            "desc1": "For the rest of my free time, I like to disconnect from the world in some way. Everyone manages to do this in their own way, and I like to watch anime and read manga; the latter is usually because I can't wait for the next animated chapter 🙃.",
+            "desc2": "I would like to highlight one very famous anime out of all the ones I've seen, <strong>One Piece</strong>. Today it has become almost a global reference for various values such as freedom. The latest news of these events has been in <a href=\"https://edition.cnn.com/2025/09/19/asia/one-piece-flag-indonesia-nepal-protesters-intl-hnk-dst\">the revolution in Nepal</a> where young people have risen up against a corrupt government. Something very similar to one of the best moments of One Piece that I have clipped in this video:"
+        },
+        "musicAria": "Lofi music player for concentration",
+        "animeVideoAria": "One Piece scene about freedom"
+    },
+    "help": {
+        "title": "Help",
+        "home": {
+            "title": "Home",
+            "desc": "Shows the different ways to contact me"
+        },
+        "about": {
+            "title": "About Me",
+            "desc": "Contains information about my education and work experience"
+        },
+        "projects": {
+            "title": "Projects",
+            "desc": "Collection of the most important projects I have done or collaborated on"
+        },
+        "hobbies": {
+            "title": "Hobbies",
+            "desc": "List of my activities, music, and favorite series"
+        }
+    },
+    "footer": {
+        "lastModified": "Last update: 04/12/2026"
+    }
+}

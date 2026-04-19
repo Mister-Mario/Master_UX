@@ -1,22 +1,81 @@
-ol > li {
+main ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+main ol li {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+
+main ol li>img {
+    height: 4rem;
+    width: 4rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+
+main h3 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+
+    display: flex;
     align-items: center;
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    margin: .5rem 0;
+    gap: 10px;
 }
 
-ol > li > h3 {
-    grid-column: 2;
+main h3 a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease;
 }
 
-ol > li > img {
-    border-radius: 50%;
-    grid-column: 1;
-    grid-row: 1; /*Redefinicion de grid-row-start y grid-row-end concocida*/
-    margin-right: .25rem;
-    width: 1.5rem;
+main h3:hover>*,
+main h3:focus-visible>* {
+    color: #095b3d;
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
-ol > li > *:nth-child(n+3) {
-    grid-column: 1 / 4;
+/* Icono pequeño de enlace ("link.svg") */
+main h3 img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+/* Cuando el usuario pase el ratón por la tarjeta entera, el icono de link se oscurece */
+main ol li:hover h3 img {
+    opacity: 0.8;
+}
+
+/* =========================================
+   DESCRIPCIÓN
+   ========================================= */
+main p {
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+
+    /* flex-grow empuja el contenido hacia abajo. Es muy útil si en el futuro decides 
+       añadir un botón de "Ver más" al final de cada tarjeta, para que siempre 
+       queden alineados abajo del todo independientemente de lo largo que sea el texto. */
+    flex-grow: 1;
 }

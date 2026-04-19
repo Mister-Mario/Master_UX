@@ -1,0 +1,115 @@
+main section:not(:last-of-type) {
+    margin-bottom: 4rem;
+}
+
+main section h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666666;
+    margin-bottom: 2rem;
+}
+
+main ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main ol>li {
+    border-left: 3px solid transparent;
+    padding-left: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+main h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333333;
+    margin: 0 0 0.5rem 0;
+}
+
+
+main ol>li>p:first-of-type {
+    font-weight: 600;
+    color: #095b3d;
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
+}
+
+
+main ol>li>p {
+    color: #666666;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.6;
+}
+
+main h5 {
+    font-size: 1rem;
+    color: #333333;
+    margin: 1rem 0 0.5rem 0;
+}
+
+main ul {
+    color: #666666;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Referencias */
+main section:nth-child(4) ol li p {
+    color: #666666;
+}
+
+/*Como encontrarme*/
+
+main section:last-of-type {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+main section:last-of-type h3 {
+    font-size: 1rem;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+main section:last-of-type ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main section:last-of-type ul li a {
+    display: inline-block;
+    color: #333333;
+    border-radius: 50%;
+    transition: color 0.2s ease;
+}
+
+main section:last-of-type ul li a svg {
+    width: 4rem;
+    height: 4rem;
+    color: #000000;
+}
+
+main section:last-of-type ul li a:hover,
+main section:last-of-type ul li a:focus-visible {
+    color: #095b3d;
+}
+
+main section:last-of-type ul li a:hover svg,
+main section:last-of-type ul li a:focus-visible svg {
+    transform: translateY(-5px) scale(1.1);
+    color: #095b3d;
+}
+
+main section:last-of-type ul li a:focus-visible {
+    outline: 2px solid #095b3d;
+    outline-offset: 4px;
+}

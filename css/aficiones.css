@@ -1,25 +1,80 @@
-li {
-    display: flex;
-    flex-direction: column;
+main ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-audio {
-    align-self: center;
-    margin-top: 1rem;
-    min-width: 10rem;
-    width: 50%;
+
+main ol li {
+    margin-bottom: 4.5rem;
 }
 
-span {
-    align-self: center;
-    font-size: .75rem;
-    margin: .5rem 2rem 0;
+
+main h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 1.5rem;
+
+    border-left: 4px solid #095b3d;
+    padding-left: 1rem;
 }
 
-video {
-    align-self: center;
-    height: auto;
-    margin-top: 1.5rem;
-    min-width: 10rem;
-    width: 50%;
+main p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+
+main a {
+    color: #095b3d;
+    text-decoration: none;
+
+    text-underline-offset: 4px;
+
+    transition: var(--transicion);
+}
+
+main a:hover,
+main a:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: #095b3d;
+}
+
+main strong {
+    color: #333333;
+    font-weight: 700;
+}
+
+
+main audio,
+main video {
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    outline: none;
+    display: block;
+}
+
+
+main audio {
+    width: 100%;
+    background-color: #F1F3F4;
+}
+
+main video {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Texto de "créditos" o pie de foto (como la atribución de Lukrembo) */
+main li:nth-child(3) p:last-child {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    margin-top: -1rem;
+    /* Lo acerca un poco al audio/video */
 }
