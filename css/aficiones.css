@@ -31,10 +31,7 @@ main p {
 main a {
     color: #095b3d;
     text-decoration: none;
-
     text-underline-offset: 4px;
-
-    transition: var(--transicion);
 }
 
 main a:hover,
@@ -56,6 +53,8 @@ main video {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     outline: none;
     display: block;
+    max-width: 30rem;
+    margin: 0 auto;
 }
 
 
@@ -75,6 +74,5 @@ main li:nth-child(3) p:last-child {
     font-style: italic;
     color: #888;
     text-align: center;
-    margin-top: -1rem;
-    /* Lo acerca un poco al audio/video */
+    margin-top: 1rem;
 }

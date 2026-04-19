@@ -96,7 +96,8 @@
         }
     },
     "hobbies": {
-        "title": "And Mario, what do you like to do?",
+        "title": "Hobbies",
+        "titleBody": "And Mario, what do you like to do?",
         "it": {
             "title": "Computer Science",
             "desc1": "Since I was a child, I've been interested in computers and knowing how things really work, taking a bit of the magic out of things. Luckily, I've been able to expand my knowledge in this field with my university studies."

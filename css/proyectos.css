@@ -1,4 +1,5 @@
 main ol {
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -18,6 +19,7 @@ main ol li {
     align-items: flex-start;
 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    max-width: 25rem;
 }
 
 
@@ -53,8 +55,12 @@ main h3:focus-visible>* {
     cursor: pointer;
 }
 
+main h3 span {
+    margin-right: .5rem;
+}
+
 /* Icono pequeño de enlace ("link.svg") */
-main h3 img {
+main h3 svg {
     width: 18px;
     height: 18px;
     opacity: 0.4;
@@ -62,7 +68,7 @@ main h3 img {
 }
 
 /* Cuando el usuario pase el ratón por la tarjeta entera, el icono de link se oscurece */
-main ol li:hover h3 img {
+main ol li:hover h3 svg {
     opacity: 0.8;
 }
 
@@ -73,9 +79,5 @@ main p {
     color: #666666;
     line-height: 1.6;
     margin: 0;
-
-    /* flex-grow empuja el contenido hacia abajo. Es muy útil si en el futuro decides 
-       añadir un botón de "Ver más" al final de cada tarjeta, para que siempre 
-       queden alineados abajo del todo independientemente de lo largo que sea el texto. */
     flex-grow: 1;
 }

@@ -96,14 +96,15 @@
         }
     },
     "hobbies": {
-        "title": "Y Mario, ¿a tí que te gusta hacer?",
+        "title": "Aficiones",
+        "titleBody": "Y Mario, ¿a tí que te gusta hacer?",
         "it": {
             "title": "Informática",
             "desc1": "Desde pequeño me han interesado los ordenadores y el saber como funcionan las cosas realmente, un poco quitar la magía a las cosas. Por suerte he podido expandir los conocimientos en este campo con mis estudio universitarios."
         },
         "cooking": {
             "title": "Cocina",
-            "desc1": "Siendo hosnesto me gusta más comer que cocinar, ¿a quién no?. Para poder seguir con mi apetito y probar cosas nuevas, he acabado aprendiendo a cocinarlas poco a poco.",
+            "desc1": "Siendo honesto me gusta más comer que cocinar, ¿a quién no?. Para poder seguir con mi apetito y probar cosas nuevas, he acabado aprendiendo a cocinarlas poco a poco.",
             "desc2": "Además de saciar este deseo, al aprender a cocinar, he conseguido comprender un poco otras culturas y entender como siempre hay uso para algo y que para juzgar bien lo mejor que haces es cerrar los ojos."
         },
         "music": {
