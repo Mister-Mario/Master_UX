@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mario Junquera Rojas">
-    <meta name="description"
-        content="Página personal de Mario Junquera Rojas. Estudios, Experiencia laboral y contactos">
+    <meta name="description" content="Página personal de Mario Junquera Rojas. Introducción y contactos">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/sobremi.css">
-    <title>Mario Junquera Rojas - Sobre mí</title>
+    <link rel="stylesheet" href="css/mapa.css">
+    <title>Mario Junquera Rojas - Mapa de la Web</title>
     <meta name="keywords" content="Mario Junquera Rojas">
     <script src="js/i18n/i18n.js" defer></script>
     <script src="js/search/search.js" defer></script>
@@ -49,12 +48,10 @@
                 </svg><span>M</span>ario Junquera Rojas
             </a></h1>
         <nav aria-label="Navegación principal" data-i18n-aria="nav.mainAria">
-            <a href="sobremi.html" aria-current="page" data-i18n="nav.about">Sobre Mi</a>
+            <a href="sobremi.html" data-i18n="nav.about">Sobre Mi</a>
             <a href="proyectos.html" data-i18n="nav.projects">Proyectos</a>
             <a href="aficiones.html" data-i18n="nav.hobbies">Aficiones</a>
             <a href="ayuda.html" data-i18n="nav.help">Ayuda</a>
-
-
         </nav>
         <label for="language-select" data-i18n="nav.language">Seleccionar idioma</label>
         <select id="language-select" name="language" aria-label="Seleccionar idioma de la página"
@@ -65,7 +62,7 @@
         <form role="search" aria-label="Buscador del sitio" data-i18n-aria="search.formAria">
             <label for="search-input" data-i18n="search.label">Buscar</label>
             <img src="multimedia/icons/search.svg" aria-hidden="true" alt="">
-            <input data-i18n-aria="search.inputAria" aria-label="Buscar en el portafolio por palabras clave"
+            <input data-i18n-aria="search.inputAria" aria-label="Estudios, Contacto..."
                 aria-controls="resultados-busqueda" type="search" id="search-input" placeholder="Estudios, Contacto...">
             <button type="submit" data-i18n="search.button">Buscar</button>
 
@@ -73,116 +70,67 @@
                 <ul id="resultados-busqueda" aria-live="polite"></ul>
             </aside>
         </form>
-    </header>
 
+    </header>
     <nav aria-label="breadcrumb">
         <ol>
             <li>
                 <a href="index.html" data-i18n="breadcrumb.index">Inicio</a>
             </li>
             <li>
-                <p data-i18n="breadcrumb.about">Sobre mí</p>
+                <p data-i18n="breadcrumb.hobbies">Mapa de la Web</p>
             </li>
         </ol>
     </nav>
-    <main id="seccion-sobre-mi">
-        <h2 data-i18n="about.title">¿Quién es Mario Junquera Rojas?</h2>
+    <main>
 
-        <section id="seccion-formacion">
-            <h3 data-i18n="about.education.title">Formación</h3>
-            <ol>
-                <li id="formacion-master">
-                    <h4 data-i18n="about.education.master.title">Máster Universitario en Ingeniería Web</h4>
-                    <p data-i18n="about.education.master.date">Septiembre 2025 - Actualidad</p>
-                    <p data-i18n="about.education.uni">Escuela de Ingeniería Informática, Universidad de Oviedo</p>
-                </li>
-                <li id="formacion-grado">
-                    <h4 data-i18n="about.education.degree.title">Grado en Ingeniería Informática del Software (Modalidad
-                        Bilingüe)</h4>
-                    <p data-i18n="about.education.degree.date">Septiembre 2021 - Noviembre 2025</p>
-                    <p data-i18n="about.education.uni">Escuela de Ingeniería Informática, Universidad de Oviedo</p>
-                </li>
-            </ol>
-        </section>
+        <h2 data-i18n="map.title">Mapa de la Web</h2>
+        <ol>
+            <li>
+                <h3><a href="index.html" data-i18n="breadcrumb.index">Inicio</a></h3>
+            </li>
 
-        <section id="seccion-experiencia">
-            <h3 data-i18n="about.experience.title">Experiencia Laboral</h3>
-            <ol>
-                <li id="experiencia-practicas-seresco">
-                    <h4 data-i18n="about.experience.seresco.title">Prácticas en Seresco S.A.</h4>
-                    <p data-i18n="about.experience.seresco.date">Febrero 2025 - Julio 2025</p>
-                    <h5 data-i18n="about.experience.tasks">Tareas realizadas:</h5>
-                    <ul>
-                        <li data-i18n="about.experience.seresco.task1">Implementación de catálogo de estilos
-                            empresariales
-                            para aplicaciones móviles</li>
-                        <li data-i18n="about.experience.seresco.task2">Desarrollo de aplicación con Ionic, React y
-                            TypeScript</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
+            <li>
+                <h3><a href="sobremi.html" data-i18n="nav.about">Sobre Mí</a></h3>
+                <ol>
+                    <li><a href="sobremi.html#seccion-formacion" data-i18n="about.education.title">Formación</a></li>
+                    <li><a href="sobremi.html#seccion-experiencia" data-i18n="about.experience.title">Experiencia
+                            Laboral</a>
+                    </li>
+                    <li><a href="sobremi.html#seccion-referencias" data-i18n="about.references.title">Referencias</a>
+                    </li>
+                </ol>
+            </li>
 
-        <section id="seccion-referencias">
-            <h3 data-i18n="about.references.title">Referencias</h3>
-            <ol>
-                <li id="referencia-miguel-riesco">
-                    <h4 data-i18n="about.references.miguel.name">Dr. Miguel Riesco Albizu</h4>
-                    <p data-i18n="about.references.miguel.desc">Doctor por la Universidad de Oviedo (2002) y profesor en
-                        la
-                        EII (Escuela de Ingeniería Informática) de la Universidad de Oviedo.</p>
-                </li>
-            </ol>
-        </section>
+            <li>
+                <h3><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></h3>
+                <ol>
+                    <li><a href="proyectos.html#proyecto-clipboard" data-i18n="projects.clipboard.title">Clipboard++</a>
+                    </li>
+                    <li><a href="proyectos.html#proyecto-organizo" data-i18n="projects.organizo.title">Organizo</a></li>
+                    <li><a href="proyectos.html#proyecto-image-carrousel" data-i18n="projects.carrousel.title">Image
+                            Carrousel</a></li>
+                </ol>
+            </li>
 
-        <section id="seccion-contacto">
-            <h3 data-i18n="about.links.title">Como encontrarme</h3>
-            <ul>
-                <li>
-                    <a href="mailto:uo287557@uniovi.es" data-i18n-aria="about.contact.emailAria"
-                        aria-label="Enviar un correo electrónico a Mario">
-                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path
-                                d="M1 5H2V4H20V5H21V18H20V19H2V18H1V5M3 17H19V9H18V10H16V11H14V12H12V13H10V12H8V11H6V10H4V9H3V17M19 6H3V7H5V8H7V9H9V10H13V9H15V8H17V7H19V6Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Mister-Mario" data-i18n-aria="about.contact.githubAria"
-                        aria-label="Visitar mi perfil de GitHub">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/mario-junquera-rojas-a3147b324/"
-                        data-i18n-aria="about.contact.linkedinAria" aria-label="Visitar mi perfil de LinkedIn">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path
-                                d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
-                                fill="currentColor" />
-                            <path
-                                d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
-                                fill="currentColor" />
-                            <path
-                                d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
-                                fill="currentColor" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </section>
+            <li>
+                <h3><a href="aficiones.html" data-i18n="nav.hobbies">Aficiones</a></h3>
+                <ol>
+                    <li><a href="aficiones.html#aficion-informatica" data-i18n="hobbies.it.title">Informática</a></li>
+                    <li><a href="aficiones.html#aficion-cocina" data-i18n="hobbies.cooking.title">Cocina</a></li>
+                    <li><a href="aficiones.html#aficion-musica" data-i18n="hobbies.music.title">Música</a></li>
+                    <li><a href="aficiones.html#aficion-anime" data-i18n="hobbies.anime.title">Anime y Manga</a></li>
+                </ol>
+            </li>
+
+            <li>
+                <h3><a href="ayuda.html" data-i18n="nav.help">Ayuda</a></h3>
+            </li>
+        </ol>
     </main>
     <footer>
         <p>© 2026 Mario Junquera Rojas</p>
-        <a href="mapa.html" data-i18n="map.title">Mapa de la Web</a>
+        <a href="mapa.html" data-i18n="map.title" aria-current="page">Mapa de la Web</a>
         <p data-i18n="footer.lastModified">Última actualización: 12/04/2026</p>
     </footer>
 </body>

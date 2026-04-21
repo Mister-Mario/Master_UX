@@ -141,5 +141,8 @@
     },
     "footer": {
         "lastModified": "Last update: 04/12/2026"
+    },
+    "map": {
+        "title": "Web's map"
     }
 }
