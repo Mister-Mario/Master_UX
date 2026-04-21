@@ -43,7 +43,7 @@ class I18n {
     }
 
     updateDocumentLang() {
-        document.documentElement.lang = this.currentLang;
+        document.documentElement.lang = this.currentLanguage;
     }
 
     updateTitle(pageName) {

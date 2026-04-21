@@ -68,10 +68,11 @@ main video {
     width: 90%;
 }
 
-/* Texto de "créditos" o pie de foto (como la atribución de Lukrembo) */
+
 main li:nth-child(3) p:last-child {
     font-size: 0.95rem;
     font-style: italic;
+    font-weight: 600;
     color: #888;
     text-align: center;
     margin-top: 1rem;
