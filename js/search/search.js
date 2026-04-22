@@ -4,7 +4,6 @@ class Search {
         // Atributos del DOM
         this.formBusqueda = document.querySelector('form[role="search"]');
         this.inputBusqueda = document.getElementById("search-input");
-        this.contenedorResultados = document.querySelector('aside ul');
 
         // Atributos de estado y datos
         this.rutaJson = "js/search/keywords.json";
@@ -13,7 +12,7 @@ class Search {
         this.minCaracteres = 2;
 
         // Inicializar
-        if (this.formBusqueda && this.inputBusqueda && this.contenedorResultados) {
+        if (this.formBusqueda && this.inputBusqueda) {
             this.init();
         } else {
             console.error("Fallo construccion search");
@@ -92,8 +91,22 @@ class Search {
      * @param {Array} resultados - Array de datos filtrados.
      */
     renderizar(resultados) {
+        let aside = this.formBusqueda.querySelector('aside');
+        let contenedorResultados;
+
+        if (!aside) {
+            aside = document.createElement('aside');
+            contenedorResultados = document.createElement('ul');
+            contenedorResultados.setAttribute('aria-live', 'polite');
+            aside.appendChild(contenedorResultados);
+            this.formBusqueda.appendChild(aside);
+        } else {
+            contenedorResultados = aside.querySelector('ul');
+        }
+        contenedorResultados.innerHTML = '';
+
         if (resultados.length === 0) {
-            this.contenedorResultados.innerHTML = `<li>${window.i18n.getTranslationFor("search.default")}</li>`;
+            contenedorResultados.innerHTML = `<li>${window.i18n.getTranslationFor("search.default")}</li>`;
             return;
         }
 
@@ -112,7 +125,7 @@ class Search {
             enlace.addEventListener('click', () => this.resetearBuscador());
 
             li.appendChild(enlace);
-            this.contenedorResultados.appendChild(li);
+            contenedorResultados.appendChild(li);
         });
 
     }
@@ -121,7 +134,9 @@ class Search {
      * Limpia solo la lista de resultados del DOM.
      */
     limpiarResultados() {
-        this.contenedorResultados.innerHTML = '';
+        let contenedorResultados = document.querySelector("aside")
+        if (contenedorResultados)
+            contenedorResultados.remove()
         this.resultadosActuales = [];
     }
 

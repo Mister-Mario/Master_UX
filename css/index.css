@@ -64,11 +64,13 @@ main ul li a:focus-visible svg {
 
 /* Asegura que el enlace no tenga outlines feos pero mantenga la accesibilidad */
 main ul li a {
-    display: inline-block;
-    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #333333;
 }
 
+main ul li a:hover,
 main ul li a:focus-visible {
-    outline: 2px solid #095b3d;
-    outline-offset: 4px;
+    color: #095b3d;
 }

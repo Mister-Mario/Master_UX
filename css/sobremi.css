@@ -78,6 +78,7 @@ main section:last-of-type h3 {
 }
 
 main section:last-of-type ul {
+    align-items: center;
     list-style: none;
     padding: 0;
     display: flex;
@@ -86,7 +87,9 @@ main section:last-of-type ul {
 }
 
 main section:last-of-type ul li a {
-    display: inline-block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     color: #333333;
     border-radius: 50%;
     transition: color 0.2s ease;
