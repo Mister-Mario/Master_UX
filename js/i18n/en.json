@@ -8,7 +8,8 @@
         "about": "About Me",
         "projects": "Projects",
         "help": "Help",
-        "hobbies": "Hobbies"
+        "hobbies": "Hobbies",
+        "map": "Web's map"
     },
     "search": {
         "default": "No results found",
