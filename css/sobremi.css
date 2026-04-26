@@ -1,75 +1,90 @@
-main section:not(:last-of-type) {
+/*Especifidad 002*/
+main section {
     margin-bottom: 4rem;
 }
 
+/*Especifidad 003*/
 main section h3 {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     margin-bottom: 2rem;
 }
 
+/*Especifidad 002*/
 main ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/*Especifidad 003*/
 main ol>li {
     border-left: 3px solid transparent;
     padding-left: 1.5rem;
     margin-bottom: 2.5rem;
 }
 
+/*Especifidad 002*/
 main h4 {
     font-size: 1.4rem;
     font-weight: 600;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
     margin: 0 0 0.5rem 0;
 }
 
-
+/*Especifidad 014*/
 main ol>li>p:first-of-type {
     font-weight: 600;
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     font-size: 0.9rem;
     margin: 0 0 0.5rem 0;
 }
 
-
+/*Especifidad 004*/
 main ol>li>p {
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     margin: 0 0 0.5rem 0;
     line-height: 1.6;
 }
 
+/*Especifidad 002*/
 main h5 {
     font-size: 1rem;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
     margin: 1rem 0 0.5rem 0;
 }
 
+/*Especifidad 002*/
 main ul {
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     padding-left: 1.5rem;
     line-height: 1.6;
 }
 
-/* Referencias */
+/*Especifidad 015*/
 main section:nth-child(4) ol li p {
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
 }
 
-/*Como encontrarme*/
-
+/*Especifidad 012*/
 main section:last-of-type {
     text-align: center;
     margin-top: 4rem;
 }
 
+/*Especifidad 013*/
 main section:last-of-type h3 {
     font-size: 1rem;
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -77,42 +92,47 @@ main section:last-of-type h3 {
     margin-bottom: 1.5rem;
 }
 
+/*Especifidad 013*/
 main section:last-of-type ul {
     align-items: center;
-    list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
+/*Especifidad 013*/
 main section:last-of-type ul li a {
     align-items: center;
     display: flex;
     flex-direction: column;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
     border-radius: 50%;
     transition: color 0.2s ease;
 }
 
+/*Especifidad 013*/
 main section:last-of-type ul li a svg {
     width: 4rem;
     height: 4rem;
+    /*Color de fondo heredado de body #fff*/
     color: #000000;
 }
 
+/*Especifidad 025*/
 main section:last-of-type ul li a:hover,
+/*Especifidad 025*/
 main section:last-of-type ul li a:focus-visible {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
 }
 
+/*Especifidad 026*/
 main section:last-of-type ul li a:hover svg,
+/*Especifidad 026*/
 main section:last-of-type ul li a:focus-visible svg {
     transform: translateY(-5px) scale(1.1);
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
-}
-
-main section:last-of-type ul li a:focus-visible {
-    outline: 2px solid #095b3d;
-    outline-offset: 4px;
 }

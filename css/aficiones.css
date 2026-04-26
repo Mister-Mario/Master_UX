@@ -1,25 +1,26 @@
+/*Especificidad: 002*/
 main ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-
+/*Especificidad: 003*/
 main ol li {
     margin-bottom: 4.5rem;
 }
 
-
+/*Especificidad: 002*/
 main h3 {
     font-size: 1.8rem;
     font-weight: 700;
     color: #333333;
     margin-bottom: 1.5rem;
-
     border-left: 4px solid #095b3d;
     padding-left: 1rem;
 }
 
+/*Especificidad: 002*/
 main p {
     font-size: 1.15rem;
     line-height: 1.8;
@@ -27,26 +28,30 @@ main p {
     margin-bottom: 1.5rem;
 }
 
-
+/*Especificidad: 002*/
 main a {
     color: #095b3d;
-    text-decoration: none;
+    text-decoration: underline;
     text-underline-offset: 4px;
 }
 
+/*Especificidad: 012*/
 main a:hover,
+/*Especificidad: 012*/
 main a:focus-visible {
     text-decoration: underline;
     text-decoration-color: #095b3d;
 }
 
+/*Especificidad: 002*/
 main strong {
     color: #333333;
     font-weight: 700;
 }
 
-
+/*Especificidad: 002*/
 main audio,
+/*Especificidad: 002*/
 main video {
     margin: 2rem 0;
     border-radius: 8px;
@@ -57,23 +62,23 @@ main video {
     margin: 0 auto;
 }
 
-
+/*Especificidad: 002*/
 main audio {
     width: 100%;
     background-color: #F1F3F4;
 }
 
+/*Especificidad: 002*/
 main video {
     margin: 0 auto;
     width: 90%;
 }
 
-
+/*Especificidad: 023*/
 main li:nth-child(3) p:last-child {
     font-size: 0.95rem;
     font-style: italic;
     font-weight: 600;
-    color: #888;
     text-align: center;
     margin-top: 1rem;
 }

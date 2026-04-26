@@ -1,21 +1,18 @@
-main>ol {
-    padding: 0;
-    margin: 0;
-}
-
+/*Especifidad 003*/
 main>ol>li {
     margin-bottom: 2rem;
 }
 
-
+/*Especifidad 003*/
 main>ol a {
     font-size: 1.4rem;
     text-decoration: none;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
     font-weight: 700;
-    transition: color 0.2s ease;
 }
 
+/*Especifidad 003*/
 main>ol ol {
     padding-left: 1.5rem;
     border-left: 2px solid #f4f6f8;
@@ -23,21 +20,26 @@ main>ol ol {
     margin-left: 1rem;
 }
 
+/*Especifidad 004*/
 main>ol ol li {
     margin-bottom: 0.8rem;
     position: relative;
 }
 
-
+/*Especifidad 005*/
 main>ol ol li a {
     text-decoration: none;
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     font-size: 1.05rem;
     transition: color 0.2s ease;
 }
 
+/*Especifidad 013*/
 main>ol a:hover,
+/*Especifidad 013*/
 main>ol a:focus-visible {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     text-decoration: underline;
     text-underline-offset: 4px;

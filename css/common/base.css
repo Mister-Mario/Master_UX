@@ -1,3 +1,4 @@
+/*Especificidad: 001*/
 body {
     background-color: #fff;
     box-sizing: border-box;
@@ -9,7 +10,8 @@ body {
     width: 100%;
 }
 
-/*Main related*/
+
+/*Especificidad: 001*/
 main {
     flex-grow: 1;
     padding: 0 1rem;
@@ -17,9 +19,11 @@ main {
     width: 90%;
 }
 
+/*Especificidad: 002*/
 main h2 {
     font-size: 2.5rem;
     font-weight: 700;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
     border-bottom: 2px solid #095b3d;
     padding-bottom: 1rem;
@@ -27,7 +31,9 @@ main h2 {
     text-align: center;
 }
 
+/*Especificidad: 001*/
 ol,
+/*Especificidad: 001*/
 ul {
     margin-left: .5rem;
 }

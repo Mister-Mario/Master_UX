@@ -1,15 +1,13 @@
+/*Especifidad 002*/
 main ol {
     justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
+/*Especifidad 003*/
 main ol li {
-    background: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 8px;
     padding: 2rem;
@@ -22,7 +20,7 @@ main ol li {
     max-width: 25rem;
 }
 
-
+/*Especifidad 004*/
 main ol li>img {
     height: 4rem;
     width: 4rem;
@@ -31,53 +29,53 @@ main ol li>img {
     border-radius: 8px;
 }
 
-
+/*Especifidad 002*/
 main h3 {
     font-size: 1.4rem;
-    margin: 0 0 1rem 0;
-
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+/*Especifidad 003*/
 main h3 a {
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
     text-decoration: none;
     font-weight: 700;
-    transition: color 0.2s ease;
 }
 
+/*Especifidad 012*/
 main h3:hover>*,
+/*Especifidad 012*/
 main h3:focus-visible>* {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     transform: translateY(-5px);
     cursor: pointer;
 }
 
+/*Especifidad 003*/
 main h3 span {
     margin-right: .5rem;
 }
 
-/* Icono pequeño de enlace ("link.svg") */
+/*Especifidad 003*/
 main h3 svg {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
     opacity: 0.4;
-    transition: opacity 0.2s ease;
 }
 
-/* Cuando el usuario pase el ratón por la tarjeta entera, el icono de link se oscurece */
+/*Especifidad 015*/
 main ol li:hover h3 svg {
     opacity: 0.8;
 }
 
-/* =========================================
-   DESCRIPCIÓN
-   ========================================= */
+/*Especifidad 002*/
 main p {
     color: #666666;
     line-height: 1.6;
-    margin: 0;
     flex-grow: 1;
 }

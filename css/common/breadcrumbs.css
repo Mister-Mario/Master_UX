@@ -1,4 +1,4 @@
-/*Breadcrumbs*/
+/*Especificidad: 003*/
 body>nav ol {
     align-items: center;
     display: flex;
@@ -6,41 +6,46 @@ body>nav ol {
     height: 2rem;
 }
 
+/*Especificidad: 005*/
 body>nav ol li a,
+/*Especificidad: 005*/
 body>nav ol li p {
     font-size: 1rem;
 }
 
+/*Especificidad: 005*/
 body>nav ol li a,
+/*Especificidad: 015*/
 body>nav ol li a:link,
+/*Especificidad: 015*/
 body>nav ol li a:visited {
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     text-decoration: none;
 }
 
+/*Especificidad: 015*/
 body>nav ol li a:hover,
+/*Especificidad: 015*/
 body>nav ol li a:active {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     font-weight: 800;
 }
 
+/*Especificidad: 005*/
 body>nav ol li p {
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     font-weight: 500;
+    margin-left: 0;
 }
 
+/*Especificidad: 015*/
 body>nav ol li:not(:last-child)::after {
     content: ">";
     font-size: .625rem;
     margin-left: .375rem;
     margin-right: .375rem;
     text-decoration: none;
-}
-
-body>nav ol li a::after:hover {
-    text-decoration: none;
-}
-
-body>nav ol li p {
-    margin-left: 0;
 }

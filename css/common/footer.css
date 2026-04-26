@@ -1,31 +1,40 @@
+/*Especificidad: 002*/
 body footer {
-    background-color: #ffffff;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     display: flex;
     padding: .5rem;
     justify-content: space-around;
 }
 
+/*Especificidad: 002*/
 footer p {
     font-size: .875rem;
 }
 
+/*Especificidad: 002*/
 footer a {
     text-decoration: none;
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     font-weight: 500;
     font-size: 1rem;
 }
 
+/*Especificidad: 012*/
 footer a:hover,
+/*Especificidad: 012*/
 footer a[aria-current="page"] {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     font-weight: 700;
 }
 
 /* MÓVIL (Menos de 480px) */
 @media screen and (max-width: 479px) {
+
+    /*Especificidad: 002*/
     body footer {
         align-items: center;
         flex-direction: column;

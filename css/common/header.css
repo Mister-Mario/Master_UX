@@ -1,21 +1,23 @@
+/*Especificidad: 011*/
 header label[for="language-select"],
+/*Especificidad: 012*/
 header form[role="search"]>label,
+/*Especificidad: 012*/
 header form[role="search"]>button {
     position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
+/*Especificidad: 002*/
 body header {
     align-items: end;
     display: flex;
-    gap: 2rem;
     padding: 0.75rem;
+    /*Color heredado de body #000*/
     background-color: #ffffff;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
     position: sticky;
@@ -26,29 +28,37 @@ body header {
 }
 
 /* Título / Logo */
+/*Especificidad: 002*/
 header h1 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
+/*Especificidad: 004*/
 header h1 a svg {
     width: 3rem;
     height: 3rem;
 }
 
+/*Especificidad: 003*/
 header h1 a {
     align-items: end;
     display: flex;
     text-decoration: none;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
 }
 
+/*Especificidad: 013*/
 header h1 a:hover,
+/*Especificidad: 013*/
 header h1 a[aria-current="page"] {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
 }
 
+/*Especificidad: 002*/
 header nav {
     justify-content: center;
     flex-grow: 1;
@@ -57,20 +67,26 @@ header nav {
     gap: 1.5rem;
 }
 
+/*Especificidad: 003*/
 header nav a {
     text-decoration: none;
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     font-weight: 500;
     font-size: 1rem;
 }
 
+/*Especificidad: 013*/
 header nav a:hover,
+/*Especificidad: 013*/
 header nav a[aria-current="page"] {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     font-weight: 700;
 }
 
 /* Selector de Idioma */
+/*Especificidad: 002*/
 header select {
     padding: 0.4rem 0.4rem;
     border: 1px solid #ddd;
@@ -82,28 +98,26 @@ header select {
     cursor: pointer;
 }
 
+/*Especificidad: 012*/
 header select:focus {
     outline: none;
     border-color: #095b3d;
 }
 
+/*Especificidad: 002*/
 header form {
     position: relative;
     display: flex;
     align-items: center;
     background-color: #f4f6f8;
+    color: #333333;
     border-radius: 30px;
     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
     border: 1px solid transparent;
 }
 
-header form:focus-within {
-    border-color: #095b3d;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
-}
-
 /* Icono de búsqueda */
+/*Especificidad: 003*/
 header form img {
     width: 18px;
     height: 18px;
@@ -112,30 +126,31 @@ header form img {
 }
 
 /* Input de texto */
+/*Especificidad: 013*/
 header form input[type="search"] {
     border: none;
-    background: transparent;
+    background: #f4f6f8;
+    color: #333333;
     outline: none;
     width: 11rem;
     font-size: 0.95rem;
-    color: #333333;
 }
 
-
-
-
 /* Desplegable de Resultados (Aside) */
+/*Especificidad: 003*/
 header form aside {
     position: absolute;
     top: 120%;
     right: 0;
     width: 100%;
     min-width: 20rem;
+    /*Color heredado de form #333333*/
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+/*Especificidad: 004*/
 header form aside ul {
     padding: 0;
     margin: 0;
@@ -143,11 +158,12 @@ header form aside ul {
     overflow-y: auto;
 }
 
+/*Especificidad: 015*/
 header form aside ul li:not(:last-of-type) {
     border-bottom: 1px solid #f4f6f8;
 }
 
-
+/*Especificidad: 006*/
 header form aside ul li a {
     display: flex;
     flex-direction: column;
@@ -156,34 +172,37 @@ header form aside ul li a {
     text-decoration: none;
 }
 
+/*Especificidad: 016*/
 header form aside ul li a:hover {
-    background-color: #f4f6f8;
     box-shadow: inset 2px 0 0 0 #095b3d;
 }
 
+/*Especificidad: 027*/
 header form aside ul li a:hover p:first-child,
+/*Especificidad: 027*/
 header form aside ul li a:focus-visible p:first-child {
+    /*Color de fondo heredado de aside #fff*/
     color: #095b3d;
 }
 
-
+/*Especificidad: 016*/
 header form aside ul li a:focus-visible {
     outline: none;
-    background-color: #f4f6f8;
     box-shadow: inset 2px 0 0 0 #095b3d;
 }
 
+/*Especificidad: 017*/
 header form aside ul li a p:first-child {
-    margin: 0;
+    /*Color de fondo heredado de aside #fff*/
     color: #333333;
     font-weight: 600;
     font-size: 0.95rem;
     line-height: 1.3;
 }
 
-
+/*Especificidad: 017*/
 header form aside ul li a p:last-child {
-    margin: 0;
+    /*Color de fondo heredado de aside #fff*/
     color: #666666;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -193,92 +212,101 @@ header form aside ul li a p:last-child {
 
 /* LAPTOP Y ORDENADOR */
 @media screen and (min-width: 1023px) {
+
+    /*Escondemos la M del texto para mostrar el svg*/
+    /*Especificidad: 004*/
     header h1 a span {
-        position: absolute;
         width: 1px;
         height: 1px;
-        padding: 0;
-        margin: -1px;
         overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
     }
 }
 
 @media screen and (max-width: 1023px) {
-    header svg {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
+
+    /*Escondemos el svg para que se muestre la M del texto*/
+    /*Especificidad: 004*/
+    header h1 a svg {
+        display: none;
     }
 }
 
-/* TABLET (480px a 768px) */
-@media screen and (max-width: 768px) and (min-width: 480px) {
+/* TABLET */
+/*El valor de max-width sería 768px pero el layout del header
+ya rompre en 974px*/
+@media screen and (max-width: 974px) and (min-width: 480px) {
+
+    /*Redefinición de propiedades para mostrar un layout correcto*/
+
+    /*Especificidad: 002*/
     body header {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto 1fr;
     }
 
+    /*Especificidad: 003*/
     body header h1 {
         align-self: flex-start;
         grid-column: 1 / 3;
     }
 
+    /*Especificidad: 003*/
+    body header form {
+        justify-self: end;
+    }
+
+    /*Especificidad: 003*/
     body header form,
+    /*Especificidad: 003*/
     body header select {
         grid-row: 2/3;
         width: fit-content;
     }
 
-    body header form {
-        justify-self: end;
-    }
-
+    /*Especificidad: 003*/
     body header nav {
-        justify-content: flex-start;
-        justify-self: start;
-        flex-wrap: wrap;
         grid-column: 1 / 3;
         grid-row: 3 / 4;
         width: 100%;
     }
 }
 
-/* MÓVIL (Menos de 480px) */
+/* MÓVIL */
 @media screen and (max-width: 479px) {
+
+    /*Redefinición de propiedades para mostrar un layout correcto*/
+
+    /*Especificidad: 002*/
     body header {
         align-items: center;
-        display: flex;
         flex-direction: column;
-        gap: 1rem;
     }
 
+    /*Especificidad: 003*/
     body header h1 {
         grid-column: 1 / 3;
     }
 
+    /*Especificidad: 003*/
     body header form,
+    /*Especificidad: 003*/
     body header select {
         grid-row: 3/4;
         width: fit-content;
     }
 
-    body header form {
-        justify-self: end;
-    }
-
+    /*Especificidad: 003*/
     body header nav {
         align-items: center;
         display: flex;
         flex-direction: column;
         grid-column: 1 / 3;
         width: 100%;
+    }
+
+    /*Especificidad: 004*/
+    body header form aside {
+        right: -25%;
     }
 }

@@ -1,28 +1,34 @@
+/*Especifidad 001*/
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem 0rem;
+    padding-top: 2rem;
 }
 
+/*Especifidad 002*/
 main h2 {
     font-size: 2rem;
     font-weight: 700;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
     margin-bottom: 2rem;
 }
 
+/*Especifidad 003*/
 main h2 span {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
     font-size: 2.5rem;
 }
 
+/*Especifidad 002*/
 main picture {
-    display: block;
     margin-bottom: 3rem;
 }
 
+/*Especifidad 003*/
 main picture img {
     width: 15rem;
     height: 15rem;
@@ -32,45 +38,54 @@ main picture img {
     border: 4px solid white;
 }
 
+/*Especifidad 003*/
 main section h3 {
     font-size: 1.1rem;
+    /*Color de fondo heredado de body #fff*/
     color: #666666;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
+
+/*Especifidad 002*/
 main ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
+/*Especifidad 005*/
 main ul li a svg {
     width: 4rem;
     height: 4rem;
+    /*Color de fondo heredado de body #fff*/
     color: #000000;
 }
 
-
+/*Especifidad 015*/
 main ul li a:hover svg,
+/*Especifidad 015*/
 main ul li a:focus-visible svg {
     transform: translateY(-5px) scale(1.1);
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
 }
 
-/* Asegura que el enlace no tenga outlines feos pero mantenga la accesibilidad */
+/*Especifidad 004*/
 main ul li a {
     align-items: center;
     display: flex;
     flex-direction: column;
+    /*Color de fondo heredado de body #fff*/
     color: #333333;
 }
 
+/*Especifidad 014*/
 main ul li a:hover,
+/*Especifidad 014*/
 main ul li a:focus-visible {
+    /*Color de fondo heredado de body #fff*/
     color: #095b3d;
 }
